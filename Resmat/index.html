@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/img/UniVassouras Horizontal Colorida.png">
   <title>Calculadora de Esforço Interno</title>
-  
 </head>
 <body>
   <div class="cabecalho">
-    <img class="univass1" src="/img/UniVassouras Vertical Branca.png" alt="">
-    <h1>Resistência de materiais </h1>
+    <img class="univass1" src="/Resmat/img/UniVassouras Vertical Branca.png" alt="">
+    <h1>Resistência de Materiais</h1>
+  </div>
+  
+  <div class="main-container"> 
+    <div class="calculator">
+      <input type="number" id="esforco" placeholder="Esforço Interno">
+      <input type="number" id="comprimento" placeholder="Comprimento da Barra">
+
+      <button onclick="calcular()">Calcular</button>
+      <div class="result" id="resultado">Resultado:</div>
+    </div>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/78ifKi0Ro7w?si=8940ukiSZLsdQ826" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
-<div class="calculator">
-  <input type="number" id="esforco" placeholder="Esforço Interno">
-  <input type="number" id="comprimento" placeholder="Comprimento da Barra">
-
-  <button onclick="calcular()">Calcular</button>
-  <div class="result" id="resultado">resultado</div>
-</div >
-
-<div class="rodape">
-  <h3>teste</h3>
-  <img class="univass2" src="/img/UniVassouras Horizontal Colorida.png" alt="">
-</div>
+  <div class="rodape">
+    <h3>Projeto Calculo de Construção de Ponte</h3>
+    <img class="univass2" src="/img/UniVassouras Horizontal Colorida.png" alt="">
+  </div>
 </body>
 </html>

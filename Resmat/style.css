@@ -1,109 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dbdad9;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display:flex;
-      justify-content: center;
-      height: 100vh;
-      background-color: #dbdad9;
-    }
-    .cabecalho {
-      height: 80px;
-      width: 100%;
-      align-items: center;      
-      background-color: #6d1d20;
-      position:relative;
-      padding-top: 3vh;
-    }
-    .univass1{
-        height: 8vh;
-        position: absolute;
-        padding-bottom: 2%;
-        padding-left: 3%;
-        margin-top: 0px;
-        margin-bottom: 2%;
-    }
-    h1{
-      text-align:center;
-      align-items: center;
-      font-size: 30px;
-      color:white;
-      /* o cinza:#a59c97; */
-      position: relative; 
-      margin-top: 5px;
-      margin-bottom: 1px;
+.cabecalho {
+  height: 8vh;
+  width: 100%;
+  background-color: #6d1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    }
-    .rodape{
-        background-color: #6d1d20;
-        height: 40px;
-        width: 100%;
-        position: absolute;
-        align-items: center;
-        margin-top: 45%;
-        padding-bottom: 4vh;
-    }
-    h3{
-        text-align: center;
-        margin-left:47%;
-        display:flex;
-        position:absolute;
-    }
-    .univass2{
-        height: 5vh;
-        position:absolute;
-        margin-top:3vh;
-    }
-    .calculator {
-      position: absolute;
-      height: 40%;
-      margin-top:10% ;
-      margin-bottom: 10%;
-      align-items: center;
-      justify-content: center;
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .calculator input[type="number"] {
-      align-items: center;
-      width: 40%;
-      height: 40%;
-      padding: 10px;
-      margin-bottom: 20px;
-      margin-right: 4vh;
-      margin-left: 4vh;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      text-align: center;
+.main-container{
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   
-    }
-    .calculator button {
-      align-items: center;
-      width: 100%;
-      height:20%;
-      padding: 10px;
-      background-color: #007bff;
-      border: none;
-      color: #fff;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .calculator button:hover {
-      align-items: center;
-      background-color: #0056b3;
-    }
-    .result {
-      border: 1px solid #ccc;
-      text-align: center;
-      align-items: center;
-      font-style: oblique;
-      margin-top: 10px;
-      font-weight: bold;
-      height: 50px;
-    }
- 
+}
+
+.univass1 {
+  height: 100%;
+  padding: 2% 3%;
+}
+
+h1 {
+  font-size: 2em;
+  color: white;
+  margin: 0;
+}
+
+.rodape {
+  background-color: #6d1d20;
+  height: 4vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 1em;
+  color: white;
+  margin: 0;
+}
+
+.calculator {
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result{
+  border: none;
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around
+}
+
+.calculator input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.calculator button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculator button:hover {
+  background-color: #0056b3;
+}
