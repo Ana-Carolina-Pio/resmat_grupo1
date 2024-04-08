@@ -10,12 +10,13 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/Resmat/img/UniVassouras Vertical Branca.png">
-  <title>Calculadora de Esforço Interno</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Resmat/img/UniVassouras Vertical Branca.png">
+    <title>Calculadora de Esforço Interno</title>
+    <script src="/Resmat/script.js"></script>
 </head>
 <body>
   <div class="cabecalho">
@@ -27,8 +28,14 @@
     <div class="calculator">
       <input type="number" id="esforco" placeholder="Esforço Interno">
       <input type="number" id="comprimento" placeholder="Comprimento da Barra">
-
-      <button onclick="calcular()">Calcular</button>
+    
+      <select id="tipo">
+        <option value="C">Compressão (C)</option>
+        <option value="T">Tração (T)</option>
+      </select>
+    
+      <button class="botaoCalcular" onclick="calcular()">Calcular</button>
+      <button class="botaoInformacoes" onclick="informacoes()">Informações</button>
       <div class="result" id="resultado">Resultado:</div>
     </div>
     
@@ -39,5 +46,8 @@
     <h3>Projeto Calculo de Construção de Ponte</h3>
     <img class="univass2" src="/img/UniVassouras Horizontal Colorida.png" alt="">
   </div>
+
+
+
 </body>
 </html>
