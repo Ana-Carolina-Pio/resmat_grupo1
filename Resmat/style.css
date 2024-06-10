@@ -27,8 +27,9 @@ body {
 
 .main-container {
   height: 86vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
@@ -125,21 +126,26 @@ select {
 }
 
 .ponte-macarrao-importancia {
-  max-width: 800px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto 20px;
+
 }
 
 .ponte-macarrao-importancia h2 {
+    width: 367px;
     font-size: 1.5em;
     color: #6d1d20;
     margin-bottom: 10px;
 }
 
 .ponte-macarrao-importancia p {
+    width: 367px;
     color: #333;
     line-height: 1.6;
+}
+
+iframe{
+  margin: 20px;
 }
